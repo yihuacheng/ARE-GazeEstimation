@@ -58,7 +58,6 @@ python main.py -m 13 -n 0
 Note that, we add a loop in **main.py** to perform `leave-one-person-out` automatically. You can delete it for your individual usage.<br>
 
 ## Result
-<figure class="half">
-  <img src='imgs/eye.jpg'>
-  <img src='imgs/face.jpg'>
-</figure>
+
+  <img src='imgs/eye.jpg' width=400><img src='imgs/face.jpg' width=400>
+
