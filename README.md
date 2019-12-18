@@ -28,17 +28,17 @@ numpy, os, math etc., which can be found in the head of code.
 
 ## Run the code
 ### Config
-You need to modify the **config.yaml** first especially `*data/label*` and `*data/root*` params.<br>  
-`*data/label*` represents the path of label file.<br>  
-`*data/root*` represents the path of image file.<br>  
+You need to modify the **config.yaml** first especially *`data/label`* and *`data/root`* params.<br>  
+*`data/label`* represents the path of label file.<br>  
+*`data/root`* represents the path of image file.<br>  
 
-A example of label file is `**data**` folder. Each line in label file is conducted as:<br>
+A example of label file is **`data`** folder. Each line in label file is conducted as:<br>
 ```bash
 p00/left/1.bmp p00/right/1.bmp p00/day08/0069.bmp -0.244513310176,0.0520949295694,-0.968245505778 ... ...
 ```
 Where our code reads image data form `os.path.join(data/root, "p00/left/1.bmp")` and reads gts of gaze direction from the rest in label file.<br>
 ### Options
-We provide two optional args, which are -m and -n.<br>  
+We provide two optional args, which are `-m` and `-n`.<br>  
 `-m` represet the running mode. We use `1` for train mode, `2` for predict mode and `3` for evaluate mode.<br>
 
 For example, you can run the code like:<br>
@@ -48,7 +48,7 @@ python main.py -m 13
 to train and evaluate model together.<br>
 
 `-n` represet the number of test file in 'leave-one-person-out' strategy.<br>
-For example, `*data/label*` provide 15 label file. Use
+For example, *`data/label`* provide 15 label file. Use
 ```python
 python main.py -m 13 -n 0
 ```
