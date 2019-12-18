@@ -1,10 +1,11 @@
 # Asymmetric Gaze Regression
-<img src='imgs/overview.jpg'>
+
+
 ## Introduction
 This is the `README` file for the official code associated with the ECCV2018 paper, "Appearance-Based Gaze Estimation via Evaluation-Guided Asymmetric Regression".<br>
 
 Our academic paper which describe `ARE-Net` in detail and provides full result can be found here: [[PAPER]]( http://openaccess.thecvf.com/content_ECCV_2018/papers/Yihua_Cheng_Appearance-Based_Gaze_Estimation_ECCV_2018_paper.pdf).<br>
-
+<img src='imgs/overview.jpg'>
 
 ## Usage
 We also ask that you cite the associated paper if you make use of this code; following is the BibTeX entry:<br>
@@ -56,5 +57,8 @@ python main.py -m 13 -n 0
 , you train and evaluate the model with using the first person (p00.label) as test file. <br>
 Note that, we add a loop in **main.py** to perform `leave-one-person-out` automatically. You can delete it for your individual usage.<br>
 
-##Result
-<img src='imgs/eye.jpg'> <img src='imgs/face.jpg'>
+## Result
+<figure class="half">
+  <img src='imgs/eye.jpg'>
+  <img src='imgs/face.jpg'>
+</figure>
