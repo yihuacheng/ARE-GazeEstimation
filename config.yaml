@@ -5,7 +5,7 @@ params:
   test_iters: 40 # Total Epoch = $Test_steps * $Test_iters
 
 data:
-  label: "/home/cyh/dataset/Datafile/MPII/TwoEye-ForARE/"
+  label: "data/"
   root: "/home/cyh/dataset/MPII/Eye_Face"
 
 save: "../exp/ARE-Result/" 
