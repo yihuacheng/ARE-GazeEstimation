@@ -1,0 +1,11 @@
+---
+params:
+  batch_size: 100
+  test_steps: 5  # When train $Test_steps epoch, test the model.
+  test_iters: 40 # Total Epoch = $Test_steps * $Test_iters
+
+data:
+  label: "/home/cyh/dataset/Datafile/MPII/TwoEye-ForARE/"
+  root: "/home/cyh/dataset/MPII/Eye_Face"
+
+save: "../exp/ARE-Result/" 
