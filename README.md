@@ -39,6 +39,7 @@ p00/left/1.bmp p00/right/1.bmp p00/day08/0069.bmp -0.244513310176,0.052094929569
 Where our code reads image data form `os.path.join(data/root, "p00/left/1.bmp")` and reads gts of gaze direction from the rest in label file.<br>
 ### Options
 We provide two optional args, which are `-m` and `-n`.<br>  
+
 `-m` represet the running mode. We use `1` for train mode, `2` for predict mode and `3` for evaluate mode.<br>
 
 For example, you can run the code like:<br>
@@ -52,5 +53,5 @@ For example, *`data/label`* provide 15 label file. Use
 ```python
 python main.py -m 13 -n 0
 ```
-You train and evaluate the model with using the first person (p00.label) as test file. <br>
+, you train and evaluate the model with using the first person (p00.label) as test file. <br>
 Note that, we add a loop in **main.py** to perform `leave-one-person-out` automatically. You can delete it for your individual usage.<br>
