@@ -18,7 +18,7 @@ Booktitle = {European Conference on Computer Vision (ECCV)}
 }
 ```
 
-## Enviroment
+## Environment
 To using this code, you should make sure following libraries are installed first.<br>
 ```bash
 Python>=3
